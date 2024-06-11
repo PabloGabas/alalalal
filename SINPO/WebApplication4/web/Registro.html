@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/56f2e02d5c.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="css/Registro.css">
+    <title>Sing up</title>
+</head>
+<body>
+    
+    
+    <section>
+    <div class="contenedor">
+        <div class="formulario">
+            <form action="#">
+                <h2>Registro de Usuario</h2>
+
+                <div class="input-contenedor">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="nombre" required>
+                    <label for="nombre">Nombre</label>
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fa-solid "></i>
+                    <input type="password" id="passwordField" name="contraseña" required>
+                    <label for="contraseña">Contraseña</label>
+                    <i class="fa-solid fa-eye-slash" onclick="togglePasswordVisibility()"></i>
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fa-solid fa-id-card"></i>
+                    <input type="text" name="numero_identificacion" required>
+                    <label for="numero_identificacion">Número de Identificación</label>
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fa-solid fa-school"></i>
+                    <input type="text" name="institucion_educativa" required>
+                    <label for="institucion_educativa">Institución Educativa</label>
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <input type="text" name="area_interes" required>
+                    <label for="area_interes">Área de Interés</label>
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fa-solid fa-user-tag"></i>
+                    <select name="tipo_participante" required>
+                        <option value="" disabled selected>Seleccione el tipo de participante</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="profesor">Profesor</option>
+                        <option value="investigador">Investigador</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <label for="tipo_participante">Tipo de Participante</label>
+                </div>
+
+                <div class="olvidar">
+                    <label for="recordar">
+                        <input type="checkbox" name="recordar">
+                        <a href="#">Olvidé mi contraseña</a>
+                    </label>
+                </div>
+
+                <button type="submit">Registrar</button>
+                <div class="Registrar">
+                    <p> No tengo una cuenta <a href="#"> Crear una</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="JavaScript/LoginOjo.js"></script>
+</body>
+</html>
